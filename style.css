@@ -21,3 +21,6 @@
 html{
     scroll-behavior: smooth;
 }
+#instabut{
+    border-radius: 14px;
+}
