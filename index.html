@@ -114,7 +114,23 @@ function bad() {
     }
 
 
+  <script>
+    function payDeveloper() {
+      // Replace with your actual UPI ID
+      const upiID = "9832108948@omni"; 
+      const name = "Subscription";
+      const amount = "9.00";
+      const note = "Thank You";
 
+      const url = `upi://pay?pa=${upiID}&pn=${encodeURIComponent(name)}&am=${amount}&cu=INR&tn=${encodeURIComponent(note)}`;
+
+      // Redirect to UPI payment link
+      window.location.href = url;
+    }
+
+
+
+    
 
 </script>
 
@@ -404,7 +420,7 @@ function bad() {
       <p class="mb-8 leading-relaxed">After payment, SEND the PAYMENT SCREENSHOT to the AUTO EMAIL button below. We will automatically send you the PASSWORD in few seconds to your gmail after varifying :)<br>NOTE: One user can auto email us once only.</p>
       <div class="flex justify-center">
         <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg" onclick="sendEmail()">AUTO EMAIL</button>
-<!--         <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg" onclick="sendEmail()">EMAIL US</button> -->
+   <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg" onclick="payDeveloper()">pay</button> 
       </div>
     </div>
   </div>
