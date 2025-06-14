@@ -104,12 +104,15 @@ function bad() {
 
 
 
-function sendEmail() {
+    unction sendEmail() {
       const email = "preludeplayz@gmail.com"; // Replace with your email
-      const subject = encodeURIComponent("WELCOME");
-      const body = encodeURIComponent("Attach your payment SCREENSHOT here and SEND");
-      window.location.href ='mailto:${email}?subject=${subject}$body=${body}';
+      const subject = encodeURIComponent("Get password to unlock all paid movies");
+      const body = encodeURIComponent("Hello Developer,\n I have attached🔗 the PAYMENT SCREENSHOT (prove) before sending this email");
+      
+      const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+      window.location.href = mailtoLink;
     }
+
 
 
 
